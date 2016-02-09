@@ -1,0 +1,134 @@
+body {
+    //    background-image: url("../images/banner.jpg");
+    background-color: rgba(0, 215, 255, 0);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+.section-content {
+    margin-top: 30px;
+}
+
+header {
+    min-height: 60px;
+    text-align: center;
+}
+
+header img {
+    height: 72px;
+    left: 25px;
+    position: absolute;
+    top: 5px;
+    width: 72px;
+}
+
+header .text {
+    color: #ff6600;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+}
+
+section {
+    //background-color: rgba(0, 0, 0, 0.5);
+    height: 480px;
+    margin-top: 25px;
+}
+
+label {
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+button,
+.info {
+    margin-top: 20px;
+}
+
+.info .valid {
+    color: #00cc00;
+    font-size: 20px;
+}
+
+.info .invalid {
+    color: #333;
+    font-size: 20px;
+}
+
+.display {
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-warning {
+    background-color: #ff751a;
+    border-color: #ff751a;
+    color: #fff;
+    font-weight: bold;
+}
+
+#repoData {
+    position: relative;
+    left: 20px;
+}
+
+.repo-names {
+    border-right: 1px solid #000;
+}
+
+.repo-list th span {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.repo-list .repo-td{
+    padding: 0 !important;
+}
+
+.repo-list td a {
+    color: #555;
+    display: inline-block;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+}
+
+.personal-info {
+    font-size: 15px;
+    line-height: 25px;
+    padding-left: 30px;
+}
+
+.indv-repo-info {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 30px 15px 15px 0;
+    padding: 8px;
+}
+
+.repo-name {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.repo-sub-info {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.home-icon{
+  float: right;
+  width: 25px;
+  height: 25px;
+}
+
+.my-name{
+  font-size: 30px;
+}

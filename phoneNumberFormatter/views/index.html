@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link data-require="bootstrap-css@*" data-semver="3.0.3" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body ng-app="phoneNumFormatter" ng-controller="MainController as mainCtrl">
+    <header>
+        <img src="../images/egen-logo.png">
+        <div class="text">Phone number formatter</div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3 section-content">
+                    <div>
+                        <label>Phonenumber</label>
+                        <input type="text" ng-model="mainCtrl.phonenumber" class="form-control" autofocus="autofocus"/>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-warning" ng-click="mainCtrl.formatNumber()">Format</button>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-xs-offset-3" ng-hide="mainCtrl.isInitial">
+                    <div class="info">
+                        <div ng-show="mainCtrl.isvalid" class="valid">Number is valid</div>
+                        <div ng-hide="mainCtrl.isvalid" class="invalid">Invalid number</div>
+                    </div>
+                    <div class="formatted">
+                        <label>Formatted Number :  </label>
+                        <span class="display">{{mainCtrl.formatted}}</span>
+                    </div>
+                    <div class="country">
+                        <label>Country : </label>
+                        <span class="display">{{mainCtrl.country}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+</body>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/phoneformat.js/dist/phone-format.js"></script>
+<script src="../controllers/app.js"></script>
+<script type="text/javascript" src="../services/services.js"></script>
+
+</html>
